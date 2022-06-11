@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="shortcut icon" href="./assets/img/icon2.png">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="./assets/fonts/icon/all.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+</head>
+<body>
+<!-- Pageloader Start -->
+<div class="page__loader">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<!--Pageloader End -->
+
+<!--Background Circles Start -->
+<div class="bg__circles">
+    <div class="bg__circle--1 bg__circle"></div>
+    <div class="bg__circle--2 bg__circle"></div>
+    <div class="bg__circle--3 bg__circle"></div>
+    <div class="bg__circle--4 bg__circle"></div>
+</div>
+<!--Background Circles End -->
+
+<!-- Overlay Start -->
+<div class="overlay"></div>
+<!-- Overlay End -->
+
+<!-- Main Start -->
+<div class="main hidden">
+
+    <!-- Header Section Start -->
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__row row flex--end">
+                <button type="button" class="nav--toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <div class="nav__inner">
+                        <ul>
+                            <li><a href="#home" class="nav__item link-item">home</a></li>
+                            <li><a href="#about" class="nav__item link-item">about</a></li>
+                            <li><a href="#portfolio" class="nav__item link-item">portfolio</a></li>
+                            <li><a href="#contact" class="nav__item link-item">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Home Section Start -->
+    <section id="home" class="home align-items-center">
+        <div class="home__container container">
+            <div class="home__row row align-items-center">
+                <div class="home__text">
+                    <p>Hello, I'm</p>
+                    <h1>đào xuân quý</h1>
+                    <h2>frontend web developer</h2>
+                    <a href="#about" class="home__btn btn link-item">more about me</a>
+                    <a href="#portfolio" class="home__btn btn link-item">portfolio</a>
+                </div>
+                <div class="home__img">
+                    <div class="home__img--box">
+                        <img src="./assets/img/profileImg.png" alt="Profile-Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about section--padding">
+        <div class="about__container container">
+            <div class="about__row row">
+                <div class="about__title section--title">
+                    <h2>about me</h2>
+                </div>
+            </div>
+            <div class="about__row row">
+                <div class="about__img">
+                    <div class="about__img--box">
+                        <img src="./assets/img/aboutImg.png" alt="About-Img">
+                    </div>
+                </div>
+                <div class="about__text">
+                    <p>A handsome guy come from Yen Bai 😎 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minima delectus obcaecati praesentium saepe distinctio libero exercitationem consectetur dolorem! Id placeat vel nostrum odit ab voluptatem provident, repudiandae fugit? Voluptatem?</p>
+                    <h3>skills</h3>
+                    <div class="about__skills">
+                        <div class="about__skills--item">HTML</div>
+                        <div class="about__skills--item">CSS</div>
+                        <div class="about__skills--item">javascript</div>
+                        <div class="about__skills--item">bootstrap</div>
+                        <div class="about__skills--item">java</div>
+                        <div class="about__skills--item">c</div>
+                        <div class="about__skills--item">Photoshop</div>
+                        <div class="about__skills--item">premiere pro</div>
+                    </div>
+
+                    <div class="about__tabs">
+                        <button type="button" class="about__tabs--item active" data-target="#education">education</button>
+                        <button type="button" class="about__tabs--item" data-target="#experience">experience</button>
+                    </div>
+
+                    <!-- Education Start -->
+                    <div class="tab__content active" id="education">
+                        <div class="timeline">
+
+                            <!-- Education Item Start -->
+                            <div class="timeline__item">
+                                <span class="date">Sep 2021 - Now</span>
+                                <h4>FPT University</h4>
+                                <ul>
+                                    <li>Major: Software Engineering.</li>
+                                </ul>
+                            </div>
+                            <!-- Education Item End -->
+                            
+                        </div>
+                    </div>
+                    <!-- Education End -->
+
+                    <!-- Experience Start -->
+                    <div class="tab__content" id="experience">
+                        <div class="timeline">
+
+                            <!-- Experience Item Start -->
+                            <div class="timeline__item">
+                                <span class="date">May 2022 - Now</span>
+                                <h4>JS Club - Japanese Software Engineers</h4>
+                                <ul>
+                                    <li>Member of Academic Department.</li>
+                                </ul>
+                            </div>
+                            <!-- Experience Item End -->
+
+                        </div>
+                    </div>
+                    <!-- Experience End -->
+
+                    <a href="#" class="btn" target="_blank">download CV</a>
+                    <a href="#contact" class="btn link-item">contact me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="portfolio section--padding">
+        <div class="portfolio__container container">
+            <div class="portfolio__row row">
+                <div class="portfolio__title section--title">
+                    <h2>recent work</h2>
+                </div>
+            </div>
+            <div class="portfolio__row row">
+
+                <!-- Portfolio Item Start -->
+                <div class="portfolio__item">
+                    <div class="portfolio__item--thumbnail">
+                        <img src="./assets/img/portfolio/theband.png" alt="Portfolio Item Thumb">
+                    </div>
+                    <h3 class="portfolio__item--title">The Band Website</h3>
+                    <button type="button" class="btn portfolio__item--btn">view project</button>
+                    <div class="portfolio__item--details">
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Culpa similique optio ipsam praesentium perferendis, 
+                                explicabo exercitationem ratione porro nulla ea nam a quibusdam 
+                                provident enim suscipit? Deserunt earum iste dolorem, quibusdam, 
+                                debitis expedita, ipsum harum id iure sequi aliquid ullam.</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>created - <span>31 Mar 2022</span></li>
+                                <li>technologies used - <span>HTML, CSS</span></li>
+                                <li>role - <span>frontend</span></li>
+                                <li>view live - <span><a href="https://liusdev.github.io/TheBand/" target="_blank">https://liusdev.github.io/TheBand/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="portfolio__item">
+                    <div class="portfolio__item--thumbnail">
+                        <img src="./assets/img/portfolio/portfolio.png" alt="Portfolio Item Thumb">
+                    </div>
+                    <h3 class="portfolio__item--title">Personal Portfolio Website</h3>
+                    <button type="button" class="btn portfolio__item--btn">view project</button>
+                    <div class="portfolio__item--details">
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Culpa similique optio ipsam praesentium perferendis, 
+                                explicabo exercitationem ratione porro nulla ea nam a quibusdam 
+                                provident enim suscipit? Deserunt earum iste dolorem, quibusdam, 
+                                debitis expedita, ipsum harum id iure sequi aliquid ullam.</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>created - <span>10 Jun 2022</span></li>
+                                <li>technologies used - <span>HTML, CSS</span></li>
+                                <li>role - <span>frontend</span></li>
+                                <li>view live - <span><a href=" target="_blank">https://liusdev.github.io/MyPortfolio/</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact section--padding">
+        <div class="contact__container container">
+            <div class="contact__row row">
+                <div class="contact__title section--title">
+                    <h2>contact me</h2>
+                </div>
+            </div>
+            <div class="contact__row row">
+                <div class="contact__form">
+                    <form>
+                        <div class="row">
+                            <div class="input__group">
+                                <input type="text" placeholder="Name" class="input--control" required>
+                            </div>
+                            <div class="input__group">
+                                <input type="email" placeholder="Email" class="input--control" required>
+                            </div>
+                            <div class="input__group">
+                                <input type="text" placeholder="Subject" class="input--control" required>
+                            </div>
+                            <div class="input__group">
+                                <textarea placeholder="Message" class="input--control" required></textarea>
+                            </div>
+                            <div class="submit__btn">
+                                <button type="submit" class="btn">send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__info">
+                    <div class="info__item">
+                        <h3>Email</h3>
+                        <a href="mailto:wolflavamc@gmail.com">wolflavamc@gmail.com</a>
+                    </div>
+                    <div class="info__item">
+                        <h3>Phone</h3>
+                        <a href="tel: +84978407765">+84 978407765</a>
+                    </div>
+                    <div class="info__item">
+                        <h3>follow me</h3>
+                        <div class="social__links">
+                            <a href="https://www.facebook.com/x.quy.203/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/x.quy.203/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+</div>
+<!-- Main End -->
+
+<!-- Portfolio Item Details Popup Start -->
+<div class="portfolio__popup">
+    <div class="pp__inner">
+        <div class="pp__content">
+            <div class="pp__content--header">
+                <button type="button" class="btn pp__header--close"><i class="fa-solid fa-xmark"></i></button>
+                <div class="pp__header--thumbnail"><img src="" alt=""></div>
+                <h3>Title</h3>
+            </div>
+            <div class="pp__content--body"></div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Item Details Popup End -->
+
+</body>
+</html>
