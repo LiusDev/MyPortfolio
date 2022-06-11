@@ -106,7 +106,7 @@ section {
     min-height: calc(100vh - 70px);
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
-    -webkit-backdrop-filter: var(--backdrop-filter-blur)
+    -webkit-backdrop-filter: var(--backdrop-filter-blur);
     display: none;
 }
 
