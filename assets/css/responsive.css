@@ -43,6 +43,14 @@
 
     .portfolio__item {
         width: calc(100% - 30px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .portfolio__item--title {
+        text-align: center;
     }
 
     .pp__inner {
