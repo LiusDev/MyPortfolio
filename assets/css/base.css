@@ -4,17 +4,20 @@
     --main-color: #e02f6b;
     /* --main-color: #4437ff; */
     /* --main-color: #ff5722; */
-    --blue-dark: #18293c;
+    /* --main-color: #ffffff; */
+    --blue: #0000ff;
     --orange: #ffa500;
     --green-yellow: #cddc39;
+
+    --blue-dark: #18293c;
     --bg-color1: #efa2b4;
     --bg-color2: #aef1ee;
-    --white: #fff;
     --white-alpha-40: rgba(255, 255, 255, 0.4);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
+
+    --white: #fff;
     --backdrop-filter-blur: blur(5px);
     
-    /* --blue: #0000ff; */
     /* --blue-dark: #c6d3ff; */
     /* --bg-color1: #2C3E50; */
     /* --bg-color2: #000000; */
