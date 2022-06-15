@@ -105,8 +105,8 @@
     top: 40%;
     right: -60px;
     opacity: 0.6;
-    animation: zoomInOut 8s linear infinite;
-    -webkit-animation: zoomInOut 5s linear infinite;
+    animation: zoomInOut 5s ease infinite;
+    -webkit-animation: zoomInOut 5s ease infinite;
 }
 
 .bg__circle--4 {
