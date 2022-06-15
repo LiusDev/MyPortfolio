@@ -1,1 +1,1 @@
-Quy's Portfolio: https://liusdev.github.io/MyPortfolio/
+Quy's Portfolio: https://liusdevportfolio.netlify.app/
