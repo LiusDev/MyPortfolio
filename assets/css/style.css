@@ -722,17 +722,24 @@ contact__info {
     height: 50px;
     border-radius: 25px;
     border: 1px solid transparent;
+    opacity: 1;
     font-family: inherit;
     font-weight: 400;
     font-size: 1.6rem;
     background-color: var(--white-alpha-25);
     padding: 0 20px;
     color: var(--blue-dark);
-    transition: boder-color 0.3s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .contact__form .input--control:focus {
     border-color: var(--white-alpha-40);
+}
+
+.contact__form .input--control:focus::placeholder {
+    opacity: 0.3;
+    transition: all 0.3s ease;
 }
 
 .contact__form textarea.input--control {
