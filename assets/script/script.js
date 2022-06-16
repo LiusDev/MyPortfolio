@@ -68,7 +68,8 @@ window.onload=function(){
 
     // Portfolio Item Details Popup
     document.addEventListener("click", (e) => {
-        if (e.target.classList.contains('portfolio__item--btn')) {
+        if (e.target.classList.contains('portfolio__item--btn') || e.target.classList.contains('portfolio__item--thumbnail')) {
+            console.log(e.target);
             togglePortfolioPopup();
             document.querySelector('.portfolio__popup').scrollTo(0,0);
             portfolioItemDetails(e.target.parentElement);
