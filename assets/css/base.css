@@ -205,13 +205,14 @@ button {
     position: relative;
     overflow: hidden;
     vertical-align: middle;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
 
 .btn:hover {
     color: var(--white);
-    transition: color 0.3s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
 
 .btn::before {
