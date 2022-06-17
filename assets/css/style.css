@@ -713,7 +713,9 @@ contact__info {
 .contact__form .input--control::placeholder {
     color: var(--blue-dark);
     opacity: 0.8;
+    font-size: 1.6rem;
     font-weight: 300;
+    transition: all 0.3s ease;
 }
 
 .contact__form .input--control {
@@ -722,7 +724,6 @@ contact__info {
     height: 50px;
     border-radius: 25px;
     border: 1px solid transparent;
-    opacity: 1;
     font-family: inherit;
     font-weight: 400;
     font-size: 1.6rem;
@@ -730,7 +731,6 @@ contact__info {
     padding: 0 20px;
     color: var(--blue-dark);
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
 .contact__form .input--control:focus {
