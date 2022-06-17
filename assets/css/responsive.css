@@ -60,6 +60,22 @@
     .contact__info {
         order: -1;
         margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .contact__info .info__item {
+        margin: 0 0 30px;
+        padding: 0 20px;
+    }
+
+    .contact__info .social__links a {
+        height: 50px;
+        width: 50px;
+        margin: 6px 8px;    
+    }
+
+    .contact__form .submit__btn {
+        margin: 0 auto;
     }
 }
 
