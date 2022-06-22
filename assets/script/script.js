@@ -68,36 +68,35 @@ window.onload=function(){
 
     // Portfolio Item Details Popup
     document.addEventListener("click", (e) => {
-        if (e.target.classList.contains('portfolio__item--btn') || e.target.classList.contains('portfolio__item--thumbnail')) {
-            console.log(e.target);
-            togglePortfolioPopup();
-            document.querySelector('.portfolio__popup').scrollTo(0,0);
-            portfolioItemDetails(e.target.parentElement);
+        if (e.target.classList.contains('myworks__item--btn') || e.target.classList.contains('myworks__item--thumbnail')) {
+            toggleMyWorksPopup();
+            document.querySelector('.myworks__popup').scrollTo(0,0);
+            myWorksItemDetails(e.target.parentElement);
         }
     })
 
-    function togglePortfolioPopup() {
-        document.querySelector('.portfolio__popup').classList.toggle('open');
+    function toggleMyWorksPopup() {
+        document.querySelector('.myworks__popup').classList.toggle('open');
         document.body.classList.toggle('hide--scrolling');
         document.querySelector('.main').classList.toggle('fade--out')
     }
 
-    document.querySelector('.pp__header--close').addEventListener("click", togglePortfolioPopup);
+    document.querySelector('.mwp__header--close').addEventListener("click", toggleMyWorksPopup);
     document.addEventListener("click", (e) => {
-        if(e.target.classList.contains('pp__inner')) {
-            togglePortfolioPopup();
+        if(e.target.classList.contains('mwp__inner')) {
+            toggleMyWorksPopup();
         }
     })
 
-    function portfolioItemDetails(portfolioItem) {
-        document.querySelector('.pp__header--thumbnail img').src = 
-        portfolioItem.querySelector('.portfolio__item--thumbnail img').src;
+    function myWorksItemDetails(myWorksItem) {
+        document.querySelector('.mwp__header--thumbnail img').src = 
+        myWorksItem.querySelector('.myworks__item--thumbnail img').src;
 
-        document.querySelector('.pp__content--header h3').innerHTML = 
-        portfolioItem.querySelector('.portfolio__item--title').innerHTML;
+        document.querySelector('.mwp__content--header h3').innerHTML = 
+        myWorksItem.querySelector('.myworks__item--title').innerHTML;
 
-        document.querySelector('.pp__content--body').innerHTML = 
-        portfolioItem.querySelector('.portfolio__item--details').innerHTML;
+        document.querySelector('.mwp__content--body').innerHTML = 
+        myWorksItem.querySelector('.myworks__item--details').innerHTML;
     }
     // -----------------------------
 }
