@@ -24,7 +24,7 @@
         margin: 0 7px 15px;
     }
 
-    .portfolio__item {
+    .myworks__item {
         width: calc(50% - 30px);
     }
 }
@@ -41,7 +41,7 @@
         margin-top: 30px;
     }
 
-    .portfolio__item {
+    .myworks__item {
         width: calc(100% - 30px);
         display: flex;
         align-items: center;
@@ -49,7 +49,7 @@
         flex-direction: column;
     }
 
-    .portfolio__item--title {
+    .myworks__item--title {
         text-align: center;
     }
 
@@ -97,7 +97,7 @@
         max-width: 240px;
     }
 
-    .pp__content--header h3 {
+    .mwp__content--header h3 {
         font-size: 2rem;
     }
 }
