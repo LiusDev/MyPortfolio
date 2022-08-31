@@ -261,19 +261,19 @@
                     <form>
                         <div class="row">
                             <div class="input__group">
-                                <input type="text" placeholder="Name" class="input--control" name="name" required>
+                                <input id="contactName" type="text" placeholder="Name" class="input--control" name="name" required>
                             </div>
                             <div class="input__group">
-                                <input type="email" placeholder="Email" class="input--control" name="email" required>
+                                <input id="contactEmail" type="email" placeholder="Email" class="input--control" name="email" required>
                             </div>
                             <div class="input__group">
-                                <input type="text" placeholder="Subject" class="input--control" name="subject" required>
+                                <input id="contactSubject" type="text" placeholder="Subject" class="input--control" name="subject" required>
                             </div>
                             <div class="input__group">
-                                <textarea placeholder="Message" class="input--control" name="message" required></textarea>
+                                <textarea id="contactMessage" placeholder="Message" class="input--control" name="message" required></textarea>
                             </div>
                             <div class="submit__btn">
-                                <button type="submit" class="btn">send message</button>
+                                <button id="contactSubmitBtn" type="button" class="btn">send message</button>
                             </div>
                         </div>
                     </form>
@@ -322,5 +322,14 @@
 
     <script src="./assets/fonts/icon/all.min.js"></script>
     <script src="./assets/script/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Zs5WyP8I4BKTXWhm4");
+        })();
+    </script>
+    <script src="./assets/script/emailJS.js"></script>
 </body>
 </html>
