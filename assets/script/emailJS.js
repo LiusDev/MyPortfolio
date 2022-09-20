@@ -21,7 +21,7 @@ function SendEmail() {
         console.log('SUCCESS!', response.status, response.text);
         contactSuccess();
     }, (error) => {
-        // console.log('FAILED...', error);
+        console.log('FAILED...', error);
         contactFailed();
     });
     document.querySelector('.page__loader').style.display = 'flex';
