@@ -610,97 +610,6 @@
     display: none;
 }
 
-    /* Portfolio Popup */
-    .myworks__popup {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 200;
-        visibility: hidden;
-    }
-
-    .myworks__popup.open {
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    .mwp__inner {
-        min-height: 100vh;
-        padding: 40px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .mwp__content {
-        background-color: var(--white-alpha-25);
-        padding: 30px;
-        border-radius: 30px;
-        max-width: 900px;
-        width: 100%;
-        border: 1px solid var(--white-alpha-40);
-        backdrop-filter: var(--backdrop-filter-blur);
-        -webkit-backdrop-filter: var(--backdrop-filter-blur);
-        opacity: 0;
-        transform: scale(0.9);
-        box-shadow: 0 0 20px rgb(0 0 0 / 20%);
-    }
-
-    .myworks__popup.open .mwp__content {
-        opacity: 1;
-        transform: scale(1);
-        transition: all 0.5s ease;
-    }
-
-    .mwp__content--header {
-        position: relative;
-    }
-
-    .mwp__header--close {
-        position: absolute;
-        height: 40px;
-        width: 40px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        right: -40px;
-        top: -40px;
-    }
-
-    .mwp__header--thumbnail img{
-        border-radius: 10px;
-    }
-
-    .mwp__content--header h3 {
-        font-size: 2.5rem;
-        text-transform: capitalize;
-        margin: 20px 0 15px;
-        color: var(--main-color);
-    }
-
-    .mwp__content--body .desc {
-        margin-bottom: 20px;
-
-    }
-
-    .mwp__content--body .general-info li {
-        margin-bottom: 10px;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
-    .mwp__content--body .general-info li span {
-        font-weight: 300;
-    }
-
-    .mwp__content--body .general-info li a {
-        text-transform: lowercase;
-    }
-    /* ----------------- */
-
 /* --------------------------- */
 
 /* Contact Section */
@@ -795,3 +704,117 @@ contact__info {
     transition: all 0.3s ease;
 }
 /* --------------------------- */
+
+/* Popup */
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    visibility: hidden;
+}
+
+.popup.open {
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.popup__inner {
+    min-height: 100vh;
+    padding: 40px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__content {
+    background-color: var(--white-alpha-25);
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    border: 1px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter-blur);
+    -webkit-backdrop-filter: var(--backdrop-filter-blur);
+    opacity: 0;
+    transform: scale(0.9);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.popup.open .popup__content {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.popup__header {
+    position: relative;
+}
+
+.popup__header--close {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -40px;
+    top: -40px;
+}
+
+.popup__header--thumbnail img{
+    border-radius: 10px;
+}
+
+.popup__header h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 20px 0 15px;
+    color: var(--main-color);
+}
+
+.mwp__content {
+    max-width: 900px;
+}
+
+.mwp__body .desc {
+    margin-bottom: 20px;
+}
+
+.mwp__body .general-info li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.mwp__body .general-info li span {
+    font-weight: 300;
+}
+
+.mwp__body .general-info li a {
+    text-transform: lowercase;
+}
+
+.contactp__content {
+    max-width: 500px;
+}
+
+.contactp__status-icon {
+    text-align: center;
+    font-size: 48px;
+    color: var(--main-color);
+}
+
+.contactp__header h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
+.contactp__body p {
+    font-weight: 500;
+    text-align: center;
+}
+/* ----------------- */

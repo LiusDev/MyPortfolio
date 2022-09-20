@@ -1,16 +1,18 @@
+const $ = document.querySelector.bind(document);
 // Loading
 window.addEventListener('load', () => {
-    document.querySelector('.main').classList.remove('hidden');
-    document.querySelector('.home').classList.add('active');
+    $('.main').classList.remove('hidden');
+    $('.home').classList.add('active');
 
-    document.querySelector('.page__loader').classList.add('fade--out');
+    $('.page__loader').classList.add('fade--out');
     setTimeout(() => {
-        document.querySelector('.page__loader').style.display = 'none';
+        $('.page__loader').style.display = 'none';
+        $('.page__loader').classList.remove('fade--out');
     }, 600);
 });
 // -----------------------------
 // Toggle Navbar
-const navToggler = document.querySelector('.nav--toggler');
+const navToggler = $('.nav--toggler');
 navToggler.addEventListener("click", () => {
     hideSection();
     toggleNavbar();
@@ -18,18 +20,18 @@ navToggler.addEventListener("click", () => {
 })
 
 function hideSection() {
-    document.querySelector('section.active').classList.toggle('fade--out')
+    $('section.active').classList.toggle('fade--out')
 }
 
 function toggleNavbar() {
-    document.querySelector('.header').classList.toggle('active')
+    $('.header').classList.toggle('active')
 }
 // -----------------------------
 
 // Active Section
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains('link-item') && e.target.hash !== "") {
-        document.querySelector('.overlay').classList.add('active');
+        $('.overlay').classList.add('active');
         navToggler.classList.add('hide');
         if (e.target.classList.contains('nav__item')) {
             toggleNavbar();
@@ -38,22 +40,22 @@ document.addEventListener("click", (e) => {
             document.body.classList.add('hide--scrolling');
         }
         setTimeout(() => {
-            document.querySelector('section.active').classList.remove('active', 'fade--out');
-            document.querySelector(e.target.hash).classList.add('active');
+            $('section.active').classList.remove('active', 'fade--out');
+            $(e.target.hash).classList.add('active');
             window.scrollTo(0,0);
             document.body.classList.remove('hide--scrolling');
             navToggler.classList.remove('hide');
-            document.querySelector('.overlay').classList.remove('active');
+            $('.overlay').classList.remove('active');
         }, 500)
     }
 })
 // -----------------------------
 
 // About Tabs
-AboutTabs();
-function AboutTabs() {
-    const tabsContainer = document.querySelector('.about__tabs');
-    const aboutSection = document.querySelector('.about');
+aboutTabs();
+function aboutTabs() {
+    const tabsContainer = $('.about__tabs');
+    const aboutSection = $('.about');
     
     tabsContainer.addEventListener("click", (e) => {
         if (e.target.classList.contains('about__tabs--item') && !e.target.classList.contains('active')) {
@@ -68,23 +70,23 @@ function AboutTabs() {
 // -----------------------------
 
 // Portfolio Item Details Popup
-PortfolioItemDetailsPopup();
-function PortfolioItemDetailsPopup() {
+portfolioItemDetailsPopup();
+function portfolioItemDetailsPopup() {
     document.addEventListener("click", (e) => {
         if (e.target.classList.contains('myworks__item--btn') || e.target.classList.contains('myworks__item--thumbnail')) {
             toggleMyWorksPopup();
-            document.querySelector('.myworks__popup').scrollTo(0,0);
+            $('.myworks__popup').scrollTo(0,0);
             myWorksItemDetails(e.target.parentElement);
         }
     })
     
     function toggleMyWorksPopup() {
-        document.querySelector('.myworks__popup').classList.toggle('open');
+        $('.myworks__popup').classList.toggle('open');
         document.body.classList.toggle('hide--scrolling');
-        document.querySelector('.main').classList.toggle('fade--out')
+        $('.main').classList.toggle('fade--out')
     }
     
-    document.querySelector('.mwp__header--close').addEventListener("click", toggleMyWorksPopup);
+    $('.mwp__header--close').addEventListener("click", toggleMyWorksPopup);
     document.addEventListener("click", (e) => {
         if(e.target.classList.contains('mwp__inner')) {
             toggleMyWorksPopup();
@@ -92,13 +94,13 @@ function PortfolioItemDetailsPopup() {
     })
     
     function myWorksItemDetails(myWorksItem) {
-        document.querySelector('.mwp__header--thumbnail img').src = 
+        $('.mwp__header--thumbnail img').src = 
         myWorksItem.querySelector('.myworks__item--thumbnail img').src;
     
-        document.querySelector('.mwp__content--header h3').innerHTML = 
+        $('.mwp__header h3').innerHTML = 
         myWorksItem.querySelector('.myworks__item--title').innerHTML;
     
-        document.querySelector('.mwp__content--body').innerHTML = 
+        $('.mwp__body').innerHTML = 
         myWorksItem.querySelector('.myworks__item--details').innerHTML;
     }
 }

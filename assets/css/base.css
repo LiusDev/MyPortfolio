@@ -65,11 +65,8 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(124.14deg,rgba(255,252,243,0) 20%,
                     rgba(255,252,243,0.2) 39.82%,rgba(255,252,243,0) 60%),
-                      radial-gradient(154% 102% at 85% 32.47%,rgba(255,252,243,0) 49.82%,
-                    rgba(230,148,247,0.6) 82.11%),radial-gradient(124% 129% at 35% 78.47%,
-                    rgba(255,252,243,0) 49.82%,rgba(255,252,243,0.6) 82.11%),
-                      radial-gradient(125% 178% at 25% 4.47%,rgba(255,252,243,0) 49.82%,
-                    rgba(255,252,243,0.6) 82.11%),radial-gradient(41.58% 150.68% at 26.01% 45.34%,rgba(255,252,243,0.6) 19.17%,rgba(255,252,243,0) 100%),linear-gradient(84.14deg,rgba(230,148,247,0.2) 2.84%,rgba(247,161,166,0.2) 118.515%),radial-gradient(50% 120% at 100% 14.47%,rgba(175,155,241,0) 6.9%,rgba(230,195,255,0.5) 52.84%,rgba(175,155,241,0) 100%),radial-gradient(56% 120% at 90% 112.47%,rgba(255,155,130,0) 26.9%,rgba(202,236,189,0.9) 72.84%,rgba(255,155,130,0) 100%),radial-gradient(35% 68% at 35% 84.47%,#ffaf9b 49.82%,rgba(251,211,199,0) 82.11%),linear-gradient(84.14deg,#bedbfa 2.84%,#caecbd 118.515%);
+                      radial-gradient(154% 102% at 85% 32.47%,rgba(255,252,243,0) 49.82%,rgba(230,148,247,0.6) 82.11%),radial-gradient(124% 129% at 35% 78.47%,rgba(255,252,243,0) 49.82%,rgba(255,252,243,0.6) 82.11%),
+                      radial-gradient(125% 178% at 25% 4.47%,rgba(255,252,243,0) 49.82%,rgba(255,252,243,0.6) 82.11%),radial-gradient(41.58% 150.68% at 26.01% 45.34%,rgba(255,252,243,0.6) 19.17%,rgba(255,252,243,0) 100%),linear-gradient(84.14deg,rgba(230,148,247,0.2) 2.84%,rgba(247,161,166,0.2) 118.515%),radial-gradient(50% 120% at 100% 14.47%,rgba(175,155,241,0) 6.9%,rgba(230,195,255,0.5) 52.84%,rgba(175,155,241,0) 100%),radial-gradient(56% 120% at 90% 112.47%,rgba(255,155,130,0) 26.9%,rgba(202,236,189,0.9) 72.84%,rgba(255,155,130,0) 100%),radial-gradient(35% 68% at 35% 84.47%,#ffaf9b 49.82%,rgba(251,211,199,0) 82.11%),linear-gradient(84.14deg,#bedbfa 2.84%,#caecbd 118.515%);
     background-attachment: fixed;
     font-size: 1.6rem;
     color: var(--blue-dark);
