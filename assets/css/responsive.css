@@ -9,8 +9,11 @@
     }
 
     .home__text {
-        padding-top: 24px;
         text-align: center;
+    }
+    
+    .home__text p {
+        padding-top: 24px;
     }
 
     .home__img {
