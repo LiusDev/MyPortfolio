@@ -493,6 +493,10 @@
     opacity: 1;
 }
 
+.about--btn {
+    width: 100%;
+}
+
 @keyframes floatIn {
     from {
         opacity: 0;

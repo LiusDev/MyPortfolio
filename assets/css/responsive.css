@@ -1,6 +1,6 @@
 @media (max-width: 991px) {
     .container {
-        padding: 0;
+        padding: 0 16px;
     }
 
     .home__text,
@@ -43,6 +43,10 @@
 
     .about__text {
         margin-top: 30px;
+    }
+
+    .about--btn {
+        text-align: center;
     }
 
     .myworks__item {
