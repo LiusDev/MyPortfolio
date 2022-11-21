@@ -442,6 +442,9 @@
     filter: drop-shadow(0 0 2px rgb(0 0 0 / 50%));
     transform-origin: 50% 100%;
     transition: all 0.5s ease;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .home__img--halfbox2 {
@@ -493,6 +496,9 @@
 .about__img--box img {
     width: 100%;
     border-radius: 10px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .about__text {
@@ -702,6 +708,9 @@
 .myworks__item--thumbnail img {
     width: 100%;
     border-radius: 10px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .myworks__item--title {
@@ -871,6 +880,9 @@ contact__info {
 
 .popup__header--thumbnail img{
     border-radius: 10px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .popup__header h3 {
