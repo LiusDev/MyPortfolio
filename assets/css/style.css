@@ -439,7 +439,7 @@
     transform: translateX(-50%);
     width: 95%;
     aspect-ratio: 1/1.5;
-    filter: drop-shadow(0 0 2px rgb(0 0 0 / 50%));
+    filter: drop-shadow(0 0 1px rgb(0 0 0 / 50%));
     transform-origin: 50% 100%;
     transition: all 0.5s ease;
     -webkit-user-select: none; /* Safari */
@@ -475,7 +475,7 @@
 .home__img--wrapper:hover img {
     width: 100%;
     bottom: 5px;
-    filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
+    filter: drop-shadow(0 0 3px rgb(0 0 0 / 50%));
 }
 /* --------------------------- */
 
