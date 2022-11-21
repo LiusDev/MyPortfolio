@@ -6,6 +6,7 @@
     .home__text,
     .home__img {
         width: 100%;
+        padding: 0 32px;
     }
 
     .home__text {
@@ -18,10 +19,7 @@
 
     .home__img {
         order: -1;
-    }
-    
-    .home__img--box {
-        max-width: 300px;
+        padding: 0 64px;
     }
 
     .home__btn {
@@ -101,11 +99,23 @@
         font-size: 1.8rem;
     }
 
-    .home__img--box {
-        max-width: 240px;
+    .home__text,
+    .home__img {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .home__img {
+        padding: 0 64px;
     }
 
-    .mwp__content--header h3 {
+    .mwp__header h3 {
         font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .home__img {
+        padding: 0 16px;
     }
 }
